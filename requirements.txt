@@ -1,6 +1,6 @@
 botorch
-cheetah-accelerator
-gym 
+cheetah-accelerator==0.5.18
+gym==0.26.2
 matplotlib
 notebook
 numpy
