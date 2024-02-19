@@ -47,4 +47,44 @@ cd bayesian-optimization
 ```
 
 ## Install required libraries in a virtual environment
+You need to install the dependencies before running the notebooks.
 
+### Using conda
+
+If you don't have conda installed already and want to use conda for environment management, you can install the miniconda as [described here](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html).
+
+- Create a conda env with `conda create -n bo-tutorial python=3.10`
+- Activate the environment with `conda activate bo-tutorial`
+- Install the required packages via `pip install -r requirements.txt`.
+
+### Using venv only
+
+If you do not have conda installed:
+
+Alternatively, you can create the virtual env with `venv` in the standard library
+
+```bash
+python -m venv nn-tutorial
+```
+
+and activate the env with `source <venv>/bin/activate` (bash) or `C:> <venv>/Scripts/activate.bat` (Windows)
+
+Then, install the packages with pip within the activated environment
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Afterwards, you should be able to run the provided notebooks.
+
+## Running the tutorial
+
+After installing the package
+
+You can start the jupyterlab in the terminal, and it will start a browser automatically
+
+```bash
+jupyter lab
+```
+
+Alternatively, you can use supported Editor to run the jupyter notebooks, e.g. with VS Code.
