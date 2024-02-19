@@ -29,7 +29,6 @@ jobs:
                 jupyter nbconvert tutorial.ipynb --to slides
                 mv tutorial.slides.html temp/index.html
                 ls -R temp
-                rm -r meta-rl/
 
             - name: Deploy
               uses: s0/git-publish-subdir-action@develop
