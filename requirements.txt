@@ -1,0 +1,13 @@
+botorch
+cheetah-accelerator
+gym 
+matplotlib
+notebook
+numpy
+rise
+scipy
+seaborn
+torch
+tqdm
+ipython
+ipywidgets
