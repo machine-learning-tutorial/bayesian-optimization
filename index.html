@@ -7443,10 +7443,106 @@ main {
 <h1 style="text-align: center; vertical-align: middle;">Introduction to Bayesian optimization</h1>
 <h2 style="text-align: center; vertical-align: middle;">Real application in a particle accelerator</h2>
 <h3 style="text-align: center; vertical-align: middle; margin-top: 1em; margin-bottom: 1em;"> Tutorial by Dr. Andrea Santamaria Garcia and Chenran Xu</h3>
-<div style="width: 50%; horizontal-align: middle; vertical-align: middle; ">
-<img alt="No description has been provided for this image" src="./img/KIT_logo.svg" style="width: 30%; float: right; vertical-align: center;"/>
+<!-- <div style="width: 50%; horizontal-align: middle; vertical-align: middle; "> -->
+<p><img alt="No description has been provided for this image" src="./img/KIT_logo.svg" style="width: 30%; margin:auto;"/></p>
+<!-- </div>
+<div style="clear: both; vertical-align: middle;"></div> -->
 </div>
-<div style="clear: both; vertical-align: middle;"></div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=02cd0294">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Get-the-repository-with-Git">Get the repository with Git<a class="anchor-link" href="#Get-the-repository-with-Git">¶</a></h1><p>You will need to have Git previously installed in your computer.
+To check if you have it installed, open your terminal and type:</p>
+<div class="highlight"><pre><span></span>git<span class="w"> </span>--version
+</pre></div>
+<h2 id="Git-installation-in-mac">Git installation in mac<a class="anchor-link" href="#Git-installation-in-mac">¶</a></h2><div class="highlight"><pre><span></span>brew<span class="w"> </span>update
+brew<span class="w"> </span>install<span class="w"> </span>git
+</pre></div>
+<h2 id="Git-installation-in-linux">Git installation in linux<a class="anchor-link" href="#Git-installation-in-linux">¶</a></h2><p>In Ubuntu/Debian</p>
+<div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git
+</pre></div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=14704f00">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Download-the-repository">Download the repository<a class="anchor-link" href="#Download-the-repository">¶</a></h2><p>Once you have Git installed open your terminal, go to your desired directory, and type:</p>
+<div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/machine-learning-tutorial/neural-networks
+<span class="nb">cd</span><span class="w"> </span>neural-networks
+</pre></div>
+<p>Or get the repository with direct download:</p>
+<div class="highlight"><pre><span></span>wget<span class="w"> </span>https://github.com/machine-learning-tutorial/neural_networks/archive/refs/heads/main.zip
+unzip<span class="w"> </span>main.zip
+<span class="nb">cd</span><span class="w"> </span>neural-networks
+</pre></div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=88616f7e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Install-dependencies">Install dependencies<a class="anchor-link" href="#Install-dependencies">¶</a></h1><p>You need to install the dependencies before running the notebooks.</p>
+<h2 id="Using-conda">Using conda<a class="anchor-link" href="#Using-conda">¶</a></h2><p>If you don't have conda installed already and want to use conda for environment management, you can install the miniconda as <a href="https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html">described here</a>.</p>
+<p>Then run the following commands:</p>
+<div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>nn-tutorial<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10
+conda<span class="w"> </span>activate<span class="w"> </span>nn-tutorial
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+jupyter<span class="w"> </span>contrib<span class="w"> </span>nbextension<span class="w"> </span>install<span class="w"> </span>--user
+jupyter<span class="w"> </span>nbextension<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>varInspector/main
+</pre></div>
+<ul>
+<li>After the tutorial you can remove your environment with <code>conda remove -n nn-tutorial --all</code></li>
+</ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=98bdbf96">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Install-dependencies">Install dependencies<a class="anchor-link" href="#Install-dependencies">¶</a></h1><p>You need to install the dependencies before running the notebooks.</p>
+<h2 id="Using-venv-only">Using venv only<a class="anchor-link" href="#Using-venv-only">¶</a></h2><p>If you do not have conda installed:</p>
+<p>Alternatively, you can create the virtual env with <code>venv</code> in the standard library</p>
+<div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>nn-tutorial
+</pre></div>
+<p>and activate the env with $ source <venv>/bin/activate (bash) or C:&gt; <venv>/Scripts/activate.bat (Windows)</venv></venv></p>
+<p>Then, install the packages with pip within the activated environment</p>
+<div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+jupyter<span class="w"> </span>contrib<span class="w"> </span>nbextension<span class="w"> </span>install<span class="w"> </span>--user
+jupyter<span class="w"> </span>nbextension<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>varInspector/main
+</pre></div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d99f6b81">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Running-the-tutorial">Running the tutorial<a class="anchor-link" href="#Running-the-tutorial">¶</a></h1><p>You can start the notebook in the terminal, and it will start a browser automatically</p>
+<div class="highlight"><pre><span></span>jupyter<span class="w"> </span>notebook
+</pre></div>
+<p>Alternatively, you can use supported Editor to run the jupyter notebooks, e.g. with VS Code.</p>
 </div>
 </div>
 </div>
@@ -7457,8 +7553,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2>Run this first!</h2>
-<p>Imports and modules:</p>
+<h1 id="Imports-and-modules">Imports and modules<a class="anchor-link" href="#Imports-and-modules">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7467,7 +7562,7 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">config</span> <span class="kn">import</span> <span class="o">*</span>
@@ -7477,22 +7572,6 @@ main {
 <span class="o">%</span><span class="k">matplotlib</span> inline
 </pre></div>
 </div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bfa5f101">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 style="color: #b51f2a">Preparation</h2>
-<ul>
-<li><a href="https://moodle.tu-darmstadt.de/mod/lti/view.php?id=1101645">Introduction to machine learning applied to particle accelerators</a> by Dr. Andrea Santamaria Garcia</li>
-<li><a href="https://moodle.tu-darmstadt.de/mod/lti/view.php?id=1101645">Machine learning activities at the accelerators of KIT</a> by Dr. Andrea Santamaria Garcia</li>
-<li><a href="https://moodle.tu-darmstadt.de/mod/lti/view.php?id=1101645">Introduction to Bayesian optimization</a> by Chenran Xu</li>
-</ul>
 </div>
 </div>
 </div>
@@ -7550,6 +7629,37 @@ main {
 </div>
 </div>
 </div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=00592ace">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="What-is-Bayesian-optimization?">What is Bayesian optimization?<a class="anchor-link" href="#What-is-Bayesian-optimization?">¶</a></h2><ul>
+<li>BO is a sequential algorithm for global optimization of an unknown function.</li>
+<li>It uses Bayes’ theorem to update the posterior belief on the objective function and direct the optimization steps.</li>
+</ul>
+<p><img alt="No description has been provided for this image" src="img/bo_1.jpg" style="width:50%; margin:auto;"/></p>
+<p style="clear:both; font-size: small; text-align: center; margin-top:1em;">image from <a href="https://engineering.rappi.com/bayesian-optimization-how-to-calibrate-the-hyper-parameters-of-computing-expensive-models-c3ca54b39dbb![image-4.png](attachment:image-4.png)">Bayesian optimization and other search algorithms</a></p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5ad73e67">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="What-is-Bayesian-optimization?">What is Bayesian optimization?<a class="anchor-link" href="#What-is-Bayesian-optimization?">¶</a></h2><ul>
+<li>BO is a sequential algorithm for global optimization of an unknown function.</li>
+<li>It uses Bayes’ theorem to update the posterior belief on the objective function and direct the optimization steps.</li>
+</ul>
+<p><img alt="No description has been provided for this image" src="img/bo_steps.gif" style="width:50%; margin:auto;"/></p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=24b032e4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7585,10 +7695,62 @@ main {
 <p>Thus the Bayes' theorem reads
 $$P(A|B) \propto P(B|A) P(A),$$</p>
 <p>i.e. the <strong>posterior probability</strong> is proportional to the <strong>prior</strong> times the <strong>likelihood</strong> probabilities.</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0b525101">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2>Bayes’ theorem – a classical example: the medical test</h2>
+<ul>
+<li><strong>A</strong>: some rare disease that only 1% of the people will have:  𝑷(𝑨)=𝟏%</li>
+<li><strong>B</strong>: the medical test shows positive
+If one has disease A, the test has 90% possibility to show positive 𝑷(𝑩|𝑨)=𝟗𝟎%
+If one does not have disease A, the test has 90% possibility to show negative 𝑷(𝑩|~𝑨)=𝟏𝟎%
+The overall probability of the test showing positive is 𝑷(𝑩)=𝟏𝟎.𝟖%</li>
+</ul>
+<p>$$
+P(B) = P(B|A)P(A) + P(B|\sim A) P(\sim A) = \\
+0.9 \times 0.01 + 0.1 \times 0.99 = 0.108  
+$$</p>
+<ul>
+<li>Now if one did the test, and the result is positive: 😨</li>
+<li><span style="color:#b51f2a"><strong>What is the probability that one has the disease?</strong></span></li>
+</ul>
+<p>$$
+P(A|B) = \frac{P(B|A)P(A)}{P(B)}= \frac{90\% \times 1\%}{10.8\%} = 8.3 \%
+$$</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=99b52c13">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2>Motivation</h2>
+<p>We want to solve the global optimization problem:</p>
+<p>$$
+\underset{x \in N}{\text{max} f(x)}
+$$</p>
+<p>where $N$ is a set of observations.</p>
 <h3>Why use it?</h3>
 <p>Bayesian inference links the degree of belief in a hypothesis before and after accounting for evidence (observations), so it's ideal for building a probabilistic model and updating it sequentially as new data is gathered:</p>
 <p><img alt="No description has been provided for this image" src="img/bayes_2.png" style="width:70%; margin:auto;"/></p>
 <p style="clear:both; font-size: small; text-align: center; margin-top:1em;">image from <a href="https://www.gaussianwaves.com/2021/04/bayes-theorem/">Bayes’ theorem</a></p>
+<h3>When to use it?</h3>
+<ul>
+<li><strong>Unknown objective:</strong> $f$ is not concave, no derivative information... so that gradient-based methods cannot be applied.</li>
+<li><strong>Expensive evaluation:</strong> it takes a lot of time or has a monetary cost, number of function evaluations needs to be minimized.</li>
+<li><strong>Continuous:</strong> the objective function can be approximated by a surrogate model.</li>
+<li><strong>Moderate number of inputs:</strong> dimension $d$ of input $x$ is not too high, usually,  $d  \leq 20$</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7599,9 +7761,11 @@ $$P(A|B) \propto P(B|A) P(A),$$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2>Bayesian Optimization</h2>
+<h2>BO algorithm</h2>
 <p><strong>Bayesian optimization (BO)</strong> is a sequential algorithm to globally optimize an unknown function $f(x)$. In other words, it solves problems of the form</p>
-<p>$$\text{max}_{x \in N} f(x),$$</p>
+<p>$$
+\underset{x \in N}{\text{max} f(x)}
+$$</p>
 <p>where $N$ is a set of observations.</p>
 <p>The steps taken by a BO algorithm are the following:</p>
 <ul>
@@ -7610,24 +7774,20 @@ $$P(A|B) \propto P(B|A) P(A),$$</p>
 <li>The <span style="color:#b51f2a"><strong>posterior</strong></span> distribution is obtained by applying Bayes' theorem.</li>
 <li>The <span style="color:#b51f2a"><strong>posterior</strong></span> distribution is used to build an <span style="color:#b51f2a"><strong>acquisition function</strong></span> that determines the next query point (more information <a href="http://localhost:8892/notebooks/lecture.ipynb#Acquisition-function)">here</a>).</li>
 </ul>
+<p><img alt="No description has been provided for this image" src="img/bo_procedure.png" style="width:100%; margin:auto;"/></p>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7ef641d1">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=eccd4644">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2>Acquisition function</h2>
-<p>The <strong>acquisition function</strong> $\alpha$ is:</p>
-<ul>
-<li>Built on the GP posterior,</li>
-<li>Controls the behavior of optimization by balancing exploration and exploitation to minimize the number of function queries (observations).</li>
-<li>For the standard verison of BO, the next sample point is chosen at $\mathrm{argmax}(\alpha)$.</li>
-<li>In this tutorial we will introduce two widely used acquisition functions: the expected improvement (EI) and the upper confidence bound (UCB).</li>
-</ul>
+<h2>BO algorithm</h2>
+<p><img alt="No description has been provided for this image" src="img/bo_code.png" style="width:70%; margin:auto;"/>
+<img alt="No description has been provided for this image" src="img/bo_procedure_2.png" style="width:70%; margin:auto;"/></p>
 </div>
 </div>
 </div>
@@ -7638,7 +7798,7 @@ $$P(A|B) \propto P(B|A) P(A),$$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2>Gaussian Process (GP)</h2>
+<h2>BO components explained: Gaussian process (GP)</h2>
 <h3>Introduction</h3>
 <p>A Gaussian Process (GP):</p>
 <ul>
@@ -7649,8 +7809,10 @@ $$P(A|B) \propto P(B|A) P(A),$$</p>
 </ul>
 </li>
 </ul>
-<p>A GP can be fully described by it's mean $\mu$ and covariance function $k(\cdot,\cdot)$
-$$f(x) \sim \mathcal{GP}(\mu(x), k(x,x'))$$</p>
+<p>A GP can be fully described by it's mean $\mu$ and covariance function $k(\cdot,\cdot)$:</p>
+<p>$$
+f(x) \sim \mathcal{GP}(\mu(x), k(x,x'))
+$$</p>
 <p>where $x$ and $x'$ are points in the input space.</p>
 <p><em>Note: in GP regression, one usually understands $x'$ as the observed points, and $x$ as the continuous variable</em></p>
 </div>
@@ -7663,7 +7825,7 @@ $$f(x) \sim \mathcal{GP}(\mu(x), k(x,x'))$$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2>Gaussian Process (GP)</h2>
+<h2>BO components explained: Gaussian process (GP)</h2>
 <h3>Definitions</h3>
 <ul>
 <li><p><span style="color:#b51f2a"><strong>Kernel</strong></span> or <span style="color:#b51f2a"><strong>covariance function</strong></span> $k(\cdot,\cdot)$, is just a general name for a function $k$ of two arguments mapping a pair of inputs $x \in \mathcal{X}, x' \in \mathcal{X}$ into $\mathbb{R}$</p>
@@ -7684,41 +7846,72 @@ $$f(x) \sim \mathcal{GP}(\mu(x), k(x,x'))$$</p>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4618a2c3">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9a161f40">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2>Gaussian Process (GP)</h2>
-<h3> Bonus: would an arbitrary function of input pairs $x$ and $x'$ be a valid covariance function?</h3>
+<h2>BO components explained: Gaussian process (GP)</h2>
+<p><img alt="No description has been provided for this image" src="img/gp_1.png" style="width:30%; margin:auto;"/>
+<img alt="No description has been provided for this image" src="img/gp_2.png" style="width:70%; margin:auto;"/></p>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=67d9eeeb">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cb41659f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2>Gaussian Process (GP)</h2>
-<h3> Bonus: would an arbitrary function of input pairs $x$ and $x'$ be a valid covariance function?</h3>
-<p>The answer is no, as it has to be <strong>positive semidefinite</strong>.</p>
-<p>In this way the intersection of the covariance matrices for multiple features can have a global minima. More information and geometrical interpretation <a href="https://gowrishankar.info/blog/why-covariance-matrix-should-be-positive-semi-definite-tests-using-breast-cancer-dataset/">here</a>.</p>
+<h2>BO components explained: Gaussian process (GP)</h2>
+<h3>Covariance function (kernel): Radial basis function</h3>
+<p>It is also known as squared exponential (SE). This resembles a normal Gaussian distribution.
+It is more or less <em>the default</em> choice of kernel for GPs if one does not have a special assumption on the objective function.</p>
+<p>$$
+k_{RBF}(x, x') = \exp{\left(-\frac{1}{2}\frac{|x-x'|^2}{l^2}\right)}
+$$</p>
+<ul>
+<li>$k \rightarrow 0$ for distant $x, x'$</li>
+<li><strong>Lenghtscale $l$</strong>: controls the scaling of the input (how far the GP can extrapolate from observed points).</li>
+</ul>
+<p><img alt="No description has been provided for this image" src="img/rbf.png" style="width:50%; margin:auto;"/></p>
+<p>Some of the commonly used kernels are listed below can be found <a href="https://en.wikipedia.org/wiki/Gaussian_process#Usual_covariance_functions">here</a>.</p>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b6f434cd">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=035420e2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2>Gaussian Process (GP)</h2>
-<h3>Hyperparameters</h3>
+<h2>BO components explained: Gaussian process (GP)</h2>
+<h3>Covariance function (kernel): Radial basis function</h3>
+<p>Functions sampled from the GP with different lengthscales $l$.</p>
+<ul>
+<li>Large $l$: slow varying functions.</li>
+<li>Small $l$: fast oscillating functions.</li>
+</ul>
+<p><img alt="No description has been provided for this image" src="img/rbf_2.png" style="width:100%; margin:auto;"/></p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5cdce43f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2>BO components explained: Gaussian process (GP)</h2>
+<h3>Covariance function (kernel): Radial basis function</h3>
 <p>The characteristics of GP, or its ability to approximate the unknown function are dependent both on <strong>the choice of the covariance function</strong> and the <strong>values of the hyperparamters</strong>. The hyperparamters are usually either choosen manually based on the physics, or obtained from the maximum likelihood fit (log-likelihood fit, maximum a posteriori fit) during the optimization.</p>
+<p>$$
+k_{RBF}(x, x') = \sigma^2\exp{\left(-\frac{1}{2}\frac{|x-x'|^2}{l^2}\right)} + \sigma^2_n
+$$</p>
 <ul>
 <li><span style="color:#b51f2a"><strong>Lengthscale</strong> $l$</span> : controls the scaling of different input dimensions, i.e. how fast the objective function is expected to change from observed points, how smooth the function is.<ul>
 <li>small lengthscale = function values can change quickly</li>
@@ -7735,24 +7928,98 @@ $$f(x) \sim \mathcal{GP}(\mu(x), k(x,x'))$$</p>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b5d126df">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cbe00087">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2>Gaussian Process (GP)</h2>
-<h3>Covariance functions (kernels)</h3>
-<p>Some of the commonly used kernels are listed below can be found <a href="https://en.wikipedia.org/wiki/Gaussian_process#Usual_covariance_functions">here</a>. They can also be combined to build more complex kernels representing the underlying physics of the objective function.</p>
-<p>In this notebook we will use a scaled <span style="color:#b51f2a"><strong>radial basis function (RBF) kernel</strong></span>
-$$k_{\mathrm{RBF}} (x,x') = \exp\left(-\frac{d_{x,x'}^2}{2 l^2}\right),$$</p>
-<p>where:</p>
+<h2>BO components explained: Gaussian process (GP)</h2>
+<h3>Posterior</h3>
+<p>A GP posterior distribution can be calculated after observation of the objective function</p>
+<p><img alt="No description has been provided for this image" src="img/posterior.png" style="width:100%; margin:auto;"/></p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4618a2c3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2>BO components explained: Gaussian process (GP)</h2>
+<h3> Bonus: would an arbitrary function of input pairs $x$ and $x'$ be a valid covariance function?</h3>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=67d9eeeb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2>BO components explained: Gaussian process (GP)</h2>
+<h3> Bonus: would an arbitrary function of input pairs $x$ and $x'$ be a valid covariance function?</h3>
+<p>The answer is no, as it has to be <strong>positive semidefinite</strong>.</p>
+<p>In this way the intersection of the covariance matrices for multiple features can have a global minima. More information and geometrical interpretation <a href="https://gowrishankar.info/blog/why-covariance-matrix-should-be-positive-semi-definite-tests-using-breast-cancer-dataset/">here</a>.</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7ef641d1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2>BO components explained: acquisition function</h2>
+<p>The <strong>acquisition function</strong> $\alpha$ is:</p>
 <ul>
-<li>$l$ = lenghtscale</li>
-<li>$ d_{x,x'} := ||x - x'||^2 $ is the Euclidean distance between the two points</li>
+<li>Built on the GP posterior,</li>
+<li>Controls the behavior of optimization by balancing exploration and exploitation to minimize the number of function queries (observations).</li>
+<li>For the standard version of BO, the next sample point is chosen at $\mathrm{argmax}(\alpha)$.</li>
+<li>In this tutorial we will introduce two widely used acquisition functions: the expected improvement (EI) and the upper confidence bound (UCB).</li>
 </ul>
-<p>It is also known as squared exponential (SE). This resembles a normal Gaussian distribution.</p>
-<p>It is more or less <em>the default</em> choice of kernel for GPs if one does not have a special assumption on the objective function.</p>
+<p><img alt="No description has been provided for this image" src="img/acq_func.png" style="width:90%; margin:auto;"/></p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=16b77f00">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2>BO components explained: acquisition function</h2>
+<img alt="No description has been provided for this image" src="img/bo_steps.gif" style="width:50%; margin:auto;"/>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=52408173">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2>Caveats of Bayesian optimization</h2>
+<ul>
+<li><p>Assumption of a static problem, which is not (always) the case in real life: dynamic system, drifting components,...</p>
+<ul>
+<li>Contextual optimization</li>
+<li>Adaptive optimization: spatio-temporal kernel, ...</li>
+</ul>
+</li>
+<li><p>Scaling poorly to high-dimensional problems</p>
+<ul>
+<li>Combining local-searches, assumption of low-dimensional structure, ...</li>
+<li>Choosing meaningful priors: include domain knowledge, NN-surrogate model as prior</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -8499,7 +8766,7 @@ The GP just has a constant mean with some uncertainty.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">action</span> <span class="o">=</span> <span class="p">[</span><span class="c1"># fill here! ]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">action</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]</span>
 <span class="n">action</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8600,7 +8867,7 @@ The GP just has a constant mean with some uncertainty.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">target_beam</span> <span class="o">=</span> <span class="p">[</span><span class="c1"># fill here! ]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">target_beam</span> <span class="o">=</span> <span class="p">[</span><span class="c1">#fill here!]</span>
 </pre></div>
 </div>
 </div>
@@ -8920,6 +9187,7 @@ f(x) &amp;= -\log(\mathrm{MAE}(b_\mathrm{current},b_\mathrm{target})) \\
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Publication:-Various-applications-of-BO-in-accelerator-physics">Publication: Various applications of BO in accelerator physics<a class="anchor-link" href="#Publication:-Various-applications-of-BO-in-accelerator-physics">¶</a></h3><ul>
+<li>Review of BO applications in accelerator physics: <a href="https://arxiv.org/pdf/2312.05667.pdf">Bayesian Optimization Algorithms for Accelerator Physics</a></li>
 <li>KARA, KIT: <a href="https://arxiv.org/abs/2211.09504">Bayesian Optimization of the Beam Injection Process into a Storage Ring</a> Beam injection optimization using BO.</li>
 <li>LCLS, SLAC: <a href="https://accelconf.web.cern.ch/ipac2016/doi/JACoW-IPAC2016-WEPOW055.html">Bayesian optimization of FEL performance at LCLS</a>, <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.124.124801">Bayesian Optimization of a Free-Electron Laser</a> FEL performance tuning with quadrupoles</li>
 <li>LUX, DESY: <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.104801">Bayesian Optimization of a Laser-Plasma Accelerator</a> LPA tuning to improve bunch quality with laser energy, focus position, and gas flows.</li>
