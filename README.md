@@ -5,6 +5,7 @@
 - [Download the repository](#download-the-repository)
 - [Getting started](#getting-started)
 - [Running the tutorial](#running-the-tutorial)
+- [BO with scikit-learn](#bo-with-scikit-learn)
 
 ## Material for this tutorial
 
@@ -116,6 +117,10 @@ Alternatively, you can use supported Editor to run the jupyter notebooks, e.g. w
 ### Jupyter Notebooks
 
 Use `cmd+Enter` to execute one cell block
+
+## BO with scikit-learn
+
+In the `sklearn-gp` folder, there's an additional notebook explaining the BO concepts using only the `scikit-learn` package.
 
 ## Citing the tutorial
 
