@@ -1,5 +1,6 @@
 # Tutorial on introduction to Bayesian optimization
 
+[![DOI](https://zenodo.org/badge/759758537.svg)](https://zenodo.org/doi/10.5281/zenodo.10723702)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 - [Download the repository](#download-the-repository)
@@ -124,8 +125,23 @@ In the `sklearn-gp` folder, there's an additional notebook explaining the BO con
 
 ## Citing the tutorial
 
-This tutorial is registered [Zenodo](https://zenodo.org/), which means that there is a DOI for each code release.
+This tutorial is registered [Zenodo](https://doi.org/10.5281/zenodo.10723703).
 Please use this DOI when citing this code:
+
+```bibtex
+@software{andrea_santamaria_garcia_2024_10723703,
+  author       = {Andrea Santamaria Garcia and
+                  Chenran Xu},
+  title        = {{machine-learning-tutorial/bayesian-optimization: 
+                   v1.0.0}},
+  month        = {02},
+  year         = {2024},
+  publisher    = {Zenodo},
+  version      = {v1.0},
+  doi          = {10.5281/zenodo.10723703},
+  url          = {https://doi.org/10.5281/zenodo.10723703}
+}
+```
 
 ## Disclaimer
 
