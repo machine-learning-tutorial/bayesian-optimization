@@ -1,4 +1,5 @@
 # Tutorial on introduction to Bayesian optimization
+
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 - [Download the repository](#download-the-repository)
@@ -6,8 +7,8 @@
 - [Running the tutorial](#running-the-tutorial)
 
 ## Material for this tutorial
-- The theoretical lecture can be found here
-- The tutorial in slide form is here
+
+- The tutorial in slide form can be [found here](https://machine-learning-tutorial.github.io/bayesian-optimization/#/)
 
 ## Download the repository
 
@@ -117,8 +118,10 @@ Alternatively, you can use supported Editor to run the jupyter notebooks, e.g. w
 Use `cmd+Enter` to execute one cell block
 
 ## Citing the tutorial
-This tutorial is registered [Zenodo](https://zenodo.org/), which means that there is a DOI for each code release. 
+
+This tutorial is registered [Zenodo](https://zenodo.org/), which means that there is a DOI for each code release.
 Please use this DOI when citing this code:
 
 ## Disclaimer
+
 The content of this repository was developed by the [AI4Accelerators team](https://www.ibpt.kit.edu/AI4Accelerators.php) at the [Institute of Beam Physics and Technology (IBPT)](https://www.ibpt.kit.edu/), [Karlsruhe Institute of Technology](https://www.kit.edu/english/).
