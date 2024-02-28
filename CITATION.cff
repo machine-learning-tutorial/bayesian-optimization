@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: Santamaria Garcia
+  given-names: Andrea
+  affiliation: Karlsruhe Institute of Technology
+  orcid: "https://orcid.org/0000-0002-7498-7640"
+- family-names: Xu
+  given-names: Chenran
+  affiliation: Karlsruhe Institute of Technology
+  orcid: "https://orcid.org/0000-0002-5034-2207"
+title: "bayesian-optimization"
+type: software
+version: 1.0.0
+doi: 10.5281/zenodo.10723703
+date-released: 2024-02-28
+url: "https://github.com/machine-learning-tutorial/bayesian-optimization"
