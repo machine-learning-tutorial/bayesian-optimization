@@ -9,7 +9,6 @@ import gym
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
-import seaborn as sns
 import torch
 from botorch.acquisition import (
     ExpectedImprovement,

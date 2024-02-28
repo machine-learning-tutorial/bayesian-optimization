@@ -21,7 +21,7 @@ To check if you have it installed, open your terminal and type:
 git --version
 ```
 
-#### Git installation in MacOS
+#### Git installation in macOS
 
 ``` bash
 brew update
