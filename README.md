@@ -132,8 +132,7 @@ Please use this DOI when citing this code:
 @software{andrea_santamaria_garcia_2024_10723703,
   author       = {Andrea Santamaria Garcia and
                   Chenran Xu},
-  title        = {{machine-learning-tutorial/bayesian-optimization: 
-                   v1.0.0}},
+  title        = {{Tutorial on introduction to Bayesian optimization}},
   month        = {02},
   year         = {2024},
   publisher    = {Zenodo},
