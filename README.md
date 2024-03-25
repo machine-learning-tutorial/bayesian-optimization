@@ -130,8 +130,8 @@ Please use this DOI when citing this code:
 
 ```bibtex
 @software{andrea_santamaria_garcia_2024_10723703,
-  author       = {Andrea Santamaria Garcia and
-                  Chenran Xu},
+  author       = {Santamaria Garcia, Andrea and
+                  Xu, Chenran},
   title        = {{Tutorial on introduction to Bayesian optimization}},
   month        = {02},
   year         = {2024},
