@@ -1,3 +1,15 @@
+# Windows
+Thumbs.db
+desktop.ini
+*.ppt
+*.pptx
+
+# OS X
+.DS_Store
+.Spotlight-V100
+.Trashes
+._*
+
 # Flug archives
 *.tar.zst
 *.json
